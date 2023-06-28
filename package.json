@@ -1,0 +1,26 @@
+{
+  "name": "landing-page_loft",
+  "version": "1.0.0",
+  "description": "Макет проекта в [Figma](https://www.figma.com/file/69nIOtIXNTav3FxvlQ7jLm/Loft-House---Квартиры?type=design&node-id=0-1&mode=design&t=NBRANXawlMgyrdWD-0)",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build-dev": "webpack",
+    "build-prod": "webpack --node-env=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "image-webpack-loader": "^8.1.0",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
