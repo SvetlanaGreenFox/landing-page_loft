@@ -1,6 +1,8 @@
-@import './sass/var';
-@import './sass/style';
+// Base
+@import './sass/base/reset';
+@import './sass/base/vars';
+@import './sass/base/base';
 
-body {
-    background-color: $main-color;
-}
+// Components
+@import './sass/components/header';
+@import './sass/components/nav';

@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 840px;
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), 
+                url(./img/header/header-bg.jpg);
+
+    padding-top: 30px;
+    padding-bottom: 74px;
+}
+
+.header__top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content {
+    text-align: center;
+}
+
+.header__title {
+    font-family: $font-title;
+    font-size: 48px;
+    font-weight: 700;
+    color: $accent;
+    margin-bottom: 81px;
+}
