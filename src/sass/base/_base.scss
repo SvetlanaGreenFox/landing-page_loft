@@ -18,6 +18,39 @@ a {
 
 .container {
     margin: 0 auto;
-    width: 1140px;
+    max-width: 1140px;
     padding: 0 15px;
+}
+
+.visually__hidden {
+    // Contain text within 1px box
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+
+    // Keep the layout
+    position: absolute;
+
+    // Remove any visible trace (e. g. background color)
+    clip: rect(1px 1px 1px 1px); //IE6, IE7
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%); //browsers in the future
+
+    // Prevent the screen reader to skip spaces between words
+    white-space: nowrap; 
+}
+
+.container--small {
+    max-width: 794px;
+}
+
+.title-secondary {
+    font-size: 36px;
+    font-family: $font-title;
+    font-weight: 700;
+    color: $accent;
+}
+
+.none {
+    display: none !important;
 }

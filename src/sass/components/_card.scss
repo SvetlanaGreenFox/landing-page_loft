@@ -1,0 +1,47 @@
+.card {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        color: $white;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+
+        left: 15px;
+        right: 15px;
+        top: 15px;
+        bottom: 15px;
+
+        border: double 3px $white;
+        opacity: 0;
+
+        transition: opacity 0.3s ease;
+    }
+
+    &:hover::after {
+        opacity: 0.4;
+    }
+};
+
+.card__img {
+    transition: transform 0.2s ease;
+};
+
+.card:hover .card__img {
+    transform: scale(1.1);
+    filter: contrast(110%) brightness(1.2) saturate(1.2);
+}
+
+.card__title {
+    position: absolute;
+    left: 50px;
+    right: 20px;
+    bottom: 44px;
+
+    font-size: 24px;
+    font-weight: 400;
+};

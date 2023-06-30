@@ -1,0 +1,38 @@
+.form__input {
+    background: $form-bg;
+    padding: 12px 96px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+    font-size: 14px;
+    
+    cursor: pointer;
+
+    &::placeholder {
+        color: $placeholder;
+    }
+
+    &:focus {
+        cursor: auto;
+        background-color: rgba($form-bg, 0.3);
+    }
+}
+
+.form__privacy {
+    color: #E7E7E7;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.form__btn {
+    background-color: $accent;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: #dfcc84;
+    }
+}
