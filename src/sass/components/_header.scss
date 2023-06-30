@@ -27,3 +27,19 @@
     color: $accent;
     margin-bottom: 81px;
 }
+
+.header__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 18px;
+    gap: 30px;
+}
+
+.content-right {
+    text-align: right;
+    padding-right: 40px;
+}
+
+.content-left {
+    padding-left: 30px;
+}
