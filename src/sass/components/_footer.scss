@@ -1,0 +1,22 @@
+.footer {
+    padding: 72px 0 60px 0;
+}
+
+.footer__logo {
+    margin-top: -12px;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+}
+
+.footer__nav-list {
+    display: grid;
+    gap: 15px;
+}
