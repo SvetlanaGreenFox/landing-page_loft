@@ -1,0 +1,13 @@
+@mixin decorNumbers {
+    position: absolute;
+    top: 0;
+
+    line-height: 1.15;
+
+    font-family: $font-title;
+    font-size: 400px;
+    opacity: 0.02;
+    color: $white;
+
+    z-index: -1;
+}

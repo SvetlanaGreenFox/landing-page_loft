@@ -20,3 +20,17 @@
     display: grid;
     gap: 15px;
 }
+
+.footer__contacts-content dd{
+    margin-bottom: 20px;
+}
+
+.contact__key,
+.contact__description {
+    display: inline-block;
+}
+
+.socials-list {
+    display: flex;
+    column-gap: 22px;
+}

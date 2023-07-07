@@ -1,13 +1,21 @@
 .section-map {
+    position: relative;
+
     padding: 170px 0 180px 0;
+
+    &::before {
+        content: "V";
+        right: calc(50% + 555px);
+        transform: translate(50%, 0%);
+
+        @include decorNumbers;
+
+        top: 140px;
+    }
 }
 
 .map__title {
     margin-bottom: 88px;
-}
-
-.section-map__map {
-
 }
 
 .map {
