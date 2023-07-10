@@ -3,10 +3,12 @@
 @import './sass/base/vars';
 @import './sass/base/mixins';
 @import './sass/base/base';
+@import './libs/youtubeLightbox/youtubeLightbox.css';
 
 // Components
 @import './sass/components/header';
 @import './sass/components/nav';
+@import './sass/components/nav-icon';
 @import './sass/components/benefits';
 @import './sass/components/apartments';
 @import './sass/components/card';

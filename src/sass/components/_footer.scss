@@ -1,5 +1,9 @@
 .footer {
     padding: 72px 0 60px 0;
+
+    @include mediaTablet {
+        padding: 60px 0 20px 0;
+    }
 }
 
 .footer__logo {
@@ -14,6 +18,11 @@
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.7px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 40px 20px;
+    }
 }
 
 .footer__nav-list {
@@ -21,8 +30,19 @@
     gap: 15px;
 }
 
-.footer__contacts-content dd{
+.footer__contacts-content {
+    @include mediaTablet {
+        display: grid;
+        gap: 5px;
+    }
+}
+
+.footer__contacts-content .contact__description {
     margin-bottom: 20px;
+
+    @include mediaTablet {
+        margin-bottom: 10px; 
+    }
 }
 
 .contact__key,
@@ -33,4 +53,8 @@
 .socials-list {
     display: flex;
     column-gap: 22px;
+
+    @include mediaTablet {
+        margin-top: 10px; 
+    }
 }

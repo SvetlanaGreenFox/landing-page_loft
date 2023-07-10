@@ -1,6 +1,10 @@
 .cta {
     padding: 180px 0;
     background-image: url('./img/cta/cta-bg.jpg');
+
+    @include mediaTablet {
+        padding: 60px 0;
+    }
 }
 
 .cta__title {
@@ -9,8 +13,12 @@
 
 .cta__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }
 
 .cta__content {
@@ -22,6 +30,10 @@
     p + p {
         margin-bottom: 1em;
     }
+
+    @include mediaTablet {
+        font-size: 14px;
+    }
 }
 
 .cta__form {
@@ -30,4 +42,8 @@
     gap: 35px 30px;
 
     text-align: center;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }

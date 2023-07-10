@@ -2,10 +2,16 @@
     display: flex;
     justify-content: space-between;
     gap: 70px;
+    overflow: hidden;
 
     position: relative;
 
     padding: 120px 0;
+
+    @include mediaTablet {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
 
     &::after {
         content: "II";

@@ -44,4 +44,8 @@
 
     font-size: 24px;
     font-weight: 400;
+
+    @include mediaTablet {
+        font-size: 18px;
+    }
 };

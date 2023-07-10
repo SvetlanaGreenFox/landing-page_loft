@@ -11,3 +11,9 @@
 
     z-index: -1;
 }
+
+@mixin mediaTablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
