@@ -1,50 +1,14 @@
-[class*="copyrights-pane"] {
-	/* display: none !important; */
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
-}
-
-.map:hover [class*="copyrights-pane"] {
-    opacity: 1;
-}
-
-/* Создать свою карту */
-[class*="gototech"] {
-    display: none !important;
-}
-
-[class*="ground-pane"] {
-	filter: grayscale(1) sepia(10%);
-}
-
-/* Baloon */
-
-[class*="balloon__layout"], [class*="balloon__content"] {
-	background-color: #242b33 !important;
-    color: #fff !important;
-}
-
-[class*="balloon__tail"]::after {
-	background-color: #242b33 !important;
-}
-
-[class*="balloon_layout_panel"] {
-	background-color: #242b33 !important;
-}
-
-[class*="balloon__layout"], [class*="balloon__content"] a {
-    color: $accent !important;
-}
-
-[class*="balloon__close-button"] {
-    background: url('./img/map/cross.svg') 50% no-repeat !important;
-    width: 15px !important;
-    height: 15px !important;
-    margin: 10px 7px;
+.map [class*="main-engine-container"] {
+    filter: grayscale(1) sepia(10%);
 }
 
 .my-marker {
-    position: relative;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-marker__img {
     box-sizing: border-box;
     transform: translate(-50%,calc(-50% - 24px));
     cursor: pointer;
@@ -56,3 +20,24 @@
     width: 40px;
     height: 40px;
 }
+
+.my-marker__content {
+    min-width: 150px;
+    transform: translate(20%, -140%);
+    align-items: center;
+
+    background-color: $accent;
+    opacity: 0.8;
+
+    padding: 10px 5px;
+    border-radius: 3px;
+}
+
+.my-marker__content-item {
+    color: $dark;
+
+    & a {   
+       color: $dark;
+    }
+}
+

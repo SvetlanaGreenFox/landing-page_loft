@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Макет проекта в [Figma](https://www.figma.com/file/69nIOtIXNTav3FxvlQ7jLm/Loft-House---Квартиры?type=design&node-id=0-1&mode=design&t=NBRANXawlMgyrdWD-0)",
   "main": "index.js",
+  "homepage": "https://SvetlanaGreenFox.github.io/",
   "scripts": {
     "start": "webpack serve",
     "build-dev": "webpack",
