@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Макет проекта в [Figma](https://www.figma.com/file/69nIOtIXNTav3FxvlQ7jLm/Loft-House---Квартиры?type=design&node-id=0-1&mode=design&t=NBRANXawlMgyrdWD-0)",
   "main": "index.js",
-  "homepage": "https://SvetlanaGreenFox.github.io/",
+  "homepage": "https://SvetlanaGreenFox.github.io/landing-page_loft",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve",
     "build-dev": "webpack",
     "build-prod": "webpack --node-env=production"
@@ -14,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "gh-pages": "^6.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "image-webpack-loader": "^8.1.0",
